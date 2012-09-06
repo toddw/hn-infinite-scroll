@@ -21,7 +21,7 @@ $(document).ready(function() {
   $(document).scroll(function() {
     clearTimeout(window.scrollTimeout);
     window.scrollTimeout = setTimeout(function() {
-      if($(window).scrollTop() + $(window).height() + 500 > $("#loader").offset().top) {
+      if($(window).scrollTop() + window.innerHeight + 500 > $("#loader").offset().top) {
         loadNext();
       }
     }, 500);
