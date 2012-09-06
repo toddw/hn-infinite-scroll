@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "HN Infinite Scroll",
+  "version": "1.0",
+  "description": "Add infinite scroll to Hacker News",
+  "icons": { "16": "16.png",
+    "48": "48.png",
+    "128": "128.png" },
+  "permissions": ["webRequest"],
+  "content_scripts": [{
+    "matches": ["http://news.ycombinator.com/*"],
+      "js": ["jquery.min.js", "infinite-scroll.js"]
+  }]
+}
