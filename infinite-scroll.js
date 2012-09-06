@@ -7,9 +7,7 @@ $(document).ready(function() {
       nextPageURL = moreButton.attr('href');
     // validate moreButton
     if(moreButton.text() != "More") {
-      return setTimeout(function() {
-        loadNext();
-      });
+      return false;
     }
     
     moreButton.parents('table').parents('table').children('tbody').children('tr:last').remove();
