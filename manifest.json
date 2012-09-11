@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "HN Infinite Scroll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add infinite scroll to Hacker News",
   "icons": { "16": "16.png",
     "48": "48.png",
