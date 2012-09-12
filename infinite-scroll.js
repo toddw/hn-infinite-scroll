@@ -34,4 +34,8 @@ $(document).ready(function() {
       }
     }, 500);
   });
+
+  if(isLoaderOnScreen()) {
+    loadNext();
+  }
 });
