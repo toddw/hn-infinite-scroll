@@ -8,7 +8,7 @@
     "128": "128.png" },
   "permissions": ["webRequest"],
   "content_scripts": [{
-    "matches": ["http://news.ycombinator.com/*"],
+    "matches": ["http://news.ycombinator.com/*", "http://news.ycombinator.org/*"],
       "js": ["jquery.min.js", "infinite-scroll.js"]
   }]
 }
