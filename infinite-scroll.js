@@ -25,17 +25,17 @@ $(document).ready(function() {
       loadNext();
     }
   }
+
+  function load() {
+    if(isLoaderOnScreen()) {
+      loadNext();
+    }
+  }
   
   $(document).scroll(function() {
     clearTimeout(window.scrollTimeout);
-    window.scrollTimeout = setTimeout(function() {
-      if(isLoaderOnScreen()) {
-        loadNext();
-      }
-    }, 500);
+    window.scrollTimeout = setTimeout(load, 500);
   });
 
-  if(isLoaderOnScreen()) {
-    loadNext();
-  }
+  load();
 });
